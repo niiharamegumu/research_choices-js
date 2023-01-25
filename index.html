@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choices-jsを試す</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Choices-jsを試す</h1>
+    </header>
+    <section>
+      <h2>実験① [Multi]category</h2>
+      <p>上限5/</p>
+      <div class="w-60">
+        <select
+          multiple
+          required="required"
+          name="school-category[]"
+          id="multiple-school-category"
+        >
+          <optgroup label="1.学校">
+            <option value="1">小学校</option>
+            <option value="2">中学校</option>
+            <option value="3">高校</option>
+            <option value="4">大学</option>
+          </optgroup>
+          <optgroup label="2.法人">
+            <option value="5">オフィス</option>
+            <option value="6">事業者</option>
+          </optgroup>
+          <optgroup label="3.その他">
+            <option value="7">小学学童</option>
+          </optgroup>
+        </select>
+      </div>
+    </section>
+
+    <section>
+      <h2>実験② [Multi]学校</h2>
+      <p>
+        たくさん入れた場合/上限50/県をクリックしたらそのグループは選択される
+      </p>
+      <div class="w-60">
+        <select
+          multiple
+          required="required"
+          name="schools[]"
+          id="multiple-schools"
+        >
+          <optgroup label="1.宮崎県" data-group="miyazaki">
+            <option value="1" data-parant="miyazaki">宮崎学校</option>
+            <option>月見小学校</option>
+            <option>青空高校</option>
+            <option>紫雲学院</option>
+            <option>星空中学</option>
+            <option>桜谷大学</option>
+            <option>白鳥高等学校</option>
+            <option>蒼海高校</option>
+            <option>紅葉学園</option>
+            <option>青春小学校</option>
+            <option>美山中学</option>
+            <option>翠風学院</option>
+            <option>藍谷高校</option>
+            <option>紫雲学校</option>
+            <option>黄昏高等学校</option>
+            <option>銀山学園</option>
+            <option>住吉北中学</option>
+            <option>住吉西中学</option>
+            <option>住吉南中学</option>
+            <option>住吉東中学</option>
+          </optgroup>
+          <optgroup label="2.福岡県">
+            <option>紫花学校</option>
+            <option>白鳥学院</option>
+            <option>翠山高校</option>
+            <option>蒼海小学校</option>
+            <option>紅葉中学</option>
+            <option>青春学院</option>
+            <option>美山高校</option>
+            <option>翠風高等学校</option>
+            <option>藍谷学園</option>
+            <option>紫雲高校</option>
+            <option>黄昏小学校</option>
+            <option>銀山中学</option>
+            <option>紫花学院</option>
+            <option>白鳥高校</option>
+            <option>翠山学校</option>
+          </optgroup>
+          <optgroup label="3.大分県">
+            <option>蒼海学院</option>
+            <option>紅葉高校</option>
+            <option>青春高等学校</option>
+            <option>美山学園</option>
+            <option>翠風小学校</option>
+            <option>藍谷中学</option>
+            <option>紫雲学校</option>
+            <option>黄昏高校</option>
+            <option>銀山学院</option>
+            <option>紫花高等学校</option>
+          </optgroup>
+          <optgroup label="4.熊本県">
+            <option>白鳥学園</option>
+            <option>翠山小学校</option>
+            <option>蒼海中学</option>
+            <option>紅葉学院</option>
+            <option>青春高校</option>
+            <option>美山学校</option>
+          </optgroup>
+        </select>
+      </div>
+    </section>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

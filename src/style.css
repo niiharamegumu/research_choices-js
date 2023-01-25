@@ -1,0 +1,32 @@
+* {
+  color: black;
+}
+
+.choices {
+  overflow: unset;
+}
+
+.choices__group {
+  background-color: #d7cb27;
+  cursor: pointer;
+}
+
+.choices__group .choices__heading {
+  color: white;
+}
+
+.choices__list--multiple .choices__item {
+  background-color: #d7cb27;
+  border: 1px solid #d7cb27;
+}
+.choices[data-type*="select-multiple"] .choices__button {
+  border-left: 1px solid white;
+}
+
+.choices__input.choices__input_custom--cloned {
+  width: auto !important;
+}
+
+.w-60 {
+  width: 60%;
+}
